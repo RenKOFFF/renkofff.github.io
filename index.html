@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | BankGame</title>
+    <title>Unity WebGL Player | RegioniumGame</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -55,15 +55,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Web.loader.js";
+      var loaderUrl = buildUrl + "/Builds.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Web.data.unityweb",
-        frameworkUrl: buildUrl + "/Web.framework.js.unityweb",
-        codeUrl: buildUrl + "/Web.wasm.unityweb",
+        dataUrl: buildUrl + "/Builds.data.unityweb",
+        frameworkUrl: buildUrl + "/Builds.framework.js.unityweb",
+        codeUrl: buildUrl + "/Builds.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "Immortals Games",
-        productName: "BankGame",
-        productVersion: "1.0",
+        companyName: "DefaultCompany",
+        productName: "RegioniumGame",
+        productVersion: "0.0.0.1",
         showBanner: unityShowBanner,
       };
 
@@ -96,6 +96,7 @@
         canvas.style.height = "100%";
       }
 
+      canvas.style.background = "url('" + buildUrl + "/Builds.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
